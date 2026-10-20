@@ -1,0 +1,26 @@
+name: Analyze artist lyrics
+on:
+  schedule:
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - catalog-source.json
+      - lyric-config.json
+      - lyric-overrides.json
+permissions:
+  contents: write
+concurrency:
+  group: lyric-analysis
+  cancel-in-progress: false
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          submodules: true
+      - uses: ./.artist-core/actions/analyze

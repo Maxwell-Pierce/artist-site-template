@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "name": "Artist Name",
+  "nameFirst": "Artist ",
+  "nameLast": "Name",
+  "slug": "artist-name",
+  "initials": "AS",
+  "tagline": "Sound beyond the ordinary.",
+  "description": "The music and curated collections of Artist Name.",
+  "storageKey": "artist-name",
+  "theme": {
+    "bg": "#0b1018",
+    "surface": "#151e2c",
+    "ink": "#f1eee6",
+    "muted": "#a8b5c8",
+    "gold": "#dfbd83",
+    "pink": "#68c9df"
+  },
+  "entrance": {
+    "eyebrow": "FIND YOUR FREQUENCY",
+    "portrait": "assets/mark.svg",
+    "portraitAlt": "Artist Name monogram",
+    "tagline": "A world built around sound.",
+    "button": "Enter the listening room ↗",
+    "effect": "fade"
+  },
+  "captions": {
+    "style": "neon"
+  },
+  "hero": {
+    "eyebrow": "INDEPENDENT SOUND / OPEN HORIZONS",
+    "title": "Artist.",
+    "accent": "In full frequency.",
+    "description": "Music, curiosity, and a world of sound.",
+    "caption": "Find a sound. Stay for the feeling."
+  },
+  "about": {
+    "title": "Behind the sound.",
+    "text": "Welcome to Artist Name’s listening room. Explore the collections as they arrive."
+  }
+}

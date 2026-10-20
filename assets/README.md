@@ -1,0 +1,1 @@
+Place your own videos, artwork and icons here. Videos are discovered automatically. Optional entrance portrait: set entrance.portrait in artist.json. Provide icon-180.png, icon-192.png and icon-512.png to replace the generated fallback icons.
