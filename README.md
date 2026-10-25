@@ -31,3 +31,7 @@ Enable **Settings → Pages → Source → GitHub Actions** once for a new repos
 `.artist-core` pins an exact shared commit. Dependabot proposes daily update PRs; review the build artifact and merge to adopt shared fixes. Revert the submodule revision to roll back. Local updates: `git submodule update --init --recursive`; deliberate upgrade: `git submodule update --remote .artist-core`, then commit that revision. Never edit the submodule as though it were artist-owned source.
 
 For GitHub's **Use this template** button, the owner must enable **Settings → General → Template repository** on `artist-site-template`. The source works with a normal clone even before that flag is enabled.
+
+## Edit your website
+
+This starter enables the shared Artist Studio through `builder.json`. After deploying a core version supporting Studio, visit `/admin/`. Connect with a fine-grained repository token (Contents read/write). Edit homepage copy, entrance, colours, navigation and additional pages, preview immediately, save drafts on a separate branch, then Publish. No backend is needed. Repository access tokens are never committed. See `.artist-core/editor/README.md` for permissions, draft recovery and preview limits. To disable the editor, set `enabled` to false.
